@@ -37,7 +37,7 @@ https://community-packages.Deepin.com/Deepin/
 sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/pulse:/run/user/host/pulse --setenv=LANGUAGE="语言支持" -bD "容器所在文件夹名称"
 ```
 保存脚本内容，设置权限x  
-`$ sudo chmod +x "脚本名称"`
+`$ sudo chmod +x "脚本名称"  `
 之后就可以通过脚本启动容器  
 `$ ./"脚本名称"`  
 ## 二,开启X11转发，解除xhost限制  
