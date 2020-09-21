@@ -30,10 +30,12 @@ https://community-packages.Deepin.com/Deepin/
 编写完整启动脚本(你也可以选择别的编辑器)  
 `$ vim "自定义脚本名称"`  
 脚本中的内容:  
-	#解释器
-	#!/bin/bash
-	#启动指令(其中--bind选项可以将容器中的图像声音输出到宿主系统中，语言支持推荐填写ZH_CN:zh,-b选项可让容器系统作为一个完整的系统启动)
-	sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/pulse:/run/user/host/pulse --setenv=LANGUAGE="语言支持" -bD "容器所在文件夹名称"
+``` 
+#解释器
+#!/bin/bash
+#启动指令(其中--bind选项可以将容器中的图像声音输出到宿主系统中，语言支持推荐填写ZH_CN:zh,-b选项可让容器系统作为一个完整的系统启动)
+sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/pulse:/run/user/host/pulse --setenv=LANGUAGE="语言支持" -bD "容器所在文件夹名称"
+```
 保存脚本内容，设置权限x  
 `$ sudo chmod +x "脚本名称"`
 之后就可以通过脚本启动容器  
