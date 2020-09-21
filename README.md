@@ -61,7 +61,7 @@ sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/p
 `root@"主机名":# apt update`  
 安装Deepin-wine-qq  
 `root@"主机名":# apt install deepin.com.qq.im`  
-*Tag:由于Deepin源里的QQ因版本过低已无法登陆，建议从下方链接获取配置好的新版本WindowsQQ并替换进~/.deepinwine/Deepin-QQ/drive_c/Tencent/中*  
+*Tag:由于Deepin源里的QQ因版本过低已无法登陆，建议从下方链接获取配置好的新版本WindowsQQ并替换进~/.deepinwine/Deepin-QQ/drive_c/Program\Files/Tencent/中*  
 [NTR-QQ](https://pan.lanzoui.com/i4Sn1gtggif)
 ## 四,启动QQ  
 ### 1,引入宿主显示器  
