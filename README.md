@@ -12,7 +12,7 @@ DeepinV15:
 http://mirrors.ustc.edu.cn/deepin/  
 DeepinV20:  
 https://community-packages.Deepin.com/Deepin/  
-*Tag:镜像站内目录中的"stable""unstable""bbuster"等，为发行版代号(codename)，在/usr/share/debootstrap/scripts中有与之对应的脚本。*  
+*Tag:镜像站内目录中的"stable""unstable""buster"等，为发行版代号(codename)，在/usr/share/debootstrap/scripts中有与之对应的脚本。*  
 *PS:DeepinV20(codename:apricot)在debootstrap中没有相对应的脚本，建议将"stable"或"unstable"复制为"apricot"。*  
 `$ sudo cp /usr/share/debootstrap/scripts/stable /usr/share/debootstrap/scripts/apricot`  
 或  
@@ -37,7 +37,7 @@ https://community-packages.Deepin.com/Deepin/
 sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/pulse:/run/user/host/pulse --setenv=LANGUAGE="语言支持" -bD "容器所在文件夹名称"
 ```
 保存脚本内容，设置权限x  
-`$ sudo chmod +x "脚本名称"  `
+`$ sudo chmod +x "脚本名称"`  
 之后就可以通过脚本启动容器  
 `$ ./"脚本名称"`  
 ## 二,开启X11转发，解除xhost限制  
