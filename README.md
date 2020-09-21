@@ -7,7 +7,7 @@ Depian-Project立志于将Deepin环境以容器的形式安装进Debian系统，
 ### 2,创建容器所在目录
 `$ mkdir "文件夹名称(建议英文)"`
 ### 3,寻找构建Rootfs所需镜像
-无特定，这里建议使用一下URL镜像站:  
+无特定，这里建议使用以下URL镜像站:  
 DeepinV15:  
 http://mirrors.ustc.edu.cn/deepin/  
 DeepinV20:  
