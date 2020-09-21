@@ -39,4 +39,24 @@ sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/p
 保存脚本内容，设置权限x  
 `$ sudo chmod +x "脚本名称"`
 之后就可以通过脚本启动容器  
+`$ ./"脚本名称"`  
+## 二,开启X11转发，解除xhost限制  
+### 1,禁用xhost验证，使任何用户都可以连接到宿主XServer  
+`$ xhost +`  
+*Tag:如果你使用的是非GTK桌面(如KDE)则需要额外安装并运行一个"gnome-settings-daemon"*  
+### 2,安装"gnome-settings-daemon"  
+`$ sudo apt install gnome-settings-daemon`  
+### 3,运行  
+`$ /usr/lib/gnome-settings-daemon/gsd-xsetting`  
+## 三,进入Deepin容器并安装Deepin-wine程序(以QQ为示例)  
+### 1,进入Deepin  
 `$ ./"脚本名称"`
+之后输入账户名root回车后输入密码即可登陆Deepin  
+### 2,安装Deepin-wine-qq  
+添加32位系统支持  
+`root@"主机名":# dpkg --add-architecture i386`
+换源  
+`root@"主机名":# echo "deb http://mirrors.ustc.edu.cn/deepin unstable main contrib non-free" > /etc/apt/sources.list`  
+更新源列表  
+
+
