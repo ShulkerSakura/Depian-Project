@@ -54,7 +54,7 @@ sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/p
 之后输入账户名root回车后输入密码即可登陆Deepin  
 ### 2,安装Deepin-wine-qq  
 添加32位系统支持  
-`root@"主机名":# dpkg --add-architecture i386`
+`root@"主机名":# dpkg --add-architecture i386`  
 换源  
 `root@"主机名":# echo "deb http://mirrors.ustc.edu.cn/deepin unstable main contrib non-free" > /etc/apt/sources.list`  
 更新源列表  
