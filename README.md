@@ -12,11 +12,11 @@ DeepinV15:<br>
 http://mirrors.ustc.edu.cn/deepin/<br>
 DeepinV20:<br>
 https://community-packages.Deepin.com/Deepin/<br>
-*Tag:镜像站内目录中的"stable""unstable""bbuster"等，为发行版代号(codename)，在/usr/share/debootstrap/scripts中有与之对应的脚本。*
-*PS:DeepinV20(codename:apricot)在debootstrap中没有相对应的脚本，建议将"stable"或"unstable"复制为"apricot"。*
-`$ sudo cp /usr/share/debootstrap/scripts/stable /usr/share/debootstrap/scripts/apricot`
-或
-`$ sudo cp /usr/share/debootstrap/scripts/unstable /usr/share/debootstrap/scripts/apricot`
+*Tag:镜像站内目录中的"stable""unstable""bbuster"等，为发行版代号(codename)，在/usr/share/debootstrap/scripts中有与之对应的脚本。*<br>
+*PS:DeepinV20(codename:apricot)在debootstrap中没有相对应的脚本，建议将"stable"或"unstable"复制为"apricot"。*<br>
+`$ sudo cp /usr/share/debootstrap/scripts/stable /usr/share/debootstrap/scripts/apricot`<br>
+或<br>
+`$ sudo cp /usr/share/debootstrap/scripts/unstable /usr/share/debootstrap/scripts/apricot`<br>
 ### 4,使用debootstrap构建Deepin-Rootfs
 
 
