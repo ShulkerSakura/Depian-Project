@@ -11,7 +11,7 @@ Depian-Project立志于将Deepin环境以容器的形式安装进Debian系统，
 DeepinV15:  
 http://mirrors.ustc.edu.cn/deepin/  
 DeepinV20:  
-https://community-packages.Deepin.com/Deepin/  
+https://community-packages.Deepin.com/deepin/  
 *Tag:镜像站内目录中的"stable""unstable""buster"等，为发行版代号(codename)，在/usr/share/debootstrap/scripts中有与之对应的脚本。*  
 *PS:DeepinV20(codename:apricot)在debootstrap中没有相对应的脚本，建议将"stable"或"unstable"复制为"apricot"。*  
 `$ sudo cp /usr/share/debootstrap/scripts/stable /usr/share/debootstrap/scripts/apricot`  
