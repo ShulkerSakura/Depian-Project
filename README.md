@@ -1,6 +1,6 @@
 # #Depian-Project
 ### Q&A: 什么是Depian-Project?<br>
-Depian-Project立志于将Deepin环境以容器的形式安装进Debian系统，将Debian打造成更完美好用的Linux发行版，与Arch,Manjaro等发行版平起平坐。<br>
+Depian-Project立志于将Deepin环境以容器的形式安装进Debian系统，将Debian打造成更完美好用的Linux发行版，与Arch,Manjaro等发行版在生态上平起平坐。<br>
 ## 一,部署并构建Deepin-Rootfs容器
 ### 1,安装所需工具软件包
 `$ sudo apt install debootstrap systemd-container -y`
@@ -18,5 +18,13 @@ https://community-packages.Deepin.com/Deepin/<br>
 或<br>
 `$ sudo cp /usr/share/debootstrap/scripts/unstable /usr/share/debootstrap/scripts/apricot`<br>
 ### 4,使用debootstrap构建Deepin-Rootfs
-
+`$ sudo debootstrap --include=systemd-container --no-check-gpg "镜像中的codename" "容器文件夹名称" "镜像URL"`<br>
+*Tag:"--no-check-gpg"禁用gpg文件校验。*<br>
+### 5,配置容器内Deepin系统的root账户密码并编写启动脚本
+临时进入Deepin<br>
+`$ sudo systemd-nspawn -D "文件夹名称"`<br>
+设置root账户密码<br>
+`root@"Host":# passwd`<br>
+退出Deepin临时登陆<br>
+`root@"Host":# exit`<br>
 
