@@ -24,9 +24,9 @@ https://community-packages.Deepin.com/Deepin/
 临时进入Deepin  
 `$ sudo systemd-nspawn -D "文件夹名称"`  
 设置root账户密码  
-`root@"Host":# passwd`  
+`root@"主机名":# passwd`  
 退出Deepin临时登陆  
-`root@"Host":# exit`  
+`root@"主机名":# exit`  
 编写完整启动脚本(你也可以选择别的编辑器)  
 `$ vim "自定义脚本名称"`  
 脚本中的内容:  
