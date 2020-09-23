@@ -71,6 +71,6 @@ sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/p
 ## 五,特别鸣谢
 [It's me,Kiri!](https://kirikira.moe/post/36)  
 [CA_GA_64](https://github.com/gzzchh)  
-[CainSakura](https://iloli.cc)  
+[CainSakura](https://github.com/CainSakura)  
 
 <!--Project-By-ShulkerSakura-->
