@@ -68,3 +68,9 @@ sudo systemd-nspawn --bind=/tmp/.X11-unix:/tmp/.X11-unix --bind=/run/user/1000/p
 `root@"主机名":# export DISPLAY=:0`
 ### 2,启动QQ  
 `root@"主机名":# /opt/deepinwine/apps/Deepin-QQ/run.sh`
+## 五,特别鸣谢
+[It's me,Kiri!](https://kirikira.moe/post/36)  
+[CA_GA_64](https://github.com/gzzchh)  
+[CainSakura](https://iloli.cc)  
+
+<!--Project-By-ShulkerSakura-->
